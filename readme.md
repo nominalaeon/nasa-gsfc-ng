@@ -43,7 +43,7 @@ No big deal. By that point I had the majority of my layout styled and coded up, 
 
 Both versions focus on the single responsibility principle. I'm not a fan of technical debt for the sake of pushing out product, and these apps are good examples of creating a framework that will allow future integrations without having to predict what those might be.
 
-Creating JavaScript Classes and independent Components comes with more up-front work, but saves all the time later on with code reusability.
+Creating JavaScript Classes and independent Components comes with more up-front work, but saves all the time later on with code re-usability.
 
 ### vanilla JavaScript
 
@@ -51,6 +51,6 @@ Creating JavaScript Classes and independent Components comes with more up-front 
 
 ### AngularJS
 
-[The second version](http://nominalaeon.github.io/nasa-gsfc/) is built with Angular 1.5. The app winds up in pretty deep DOM-manipulation waters when it has to pull in fresh image assets from the API. Angular just makes too much sense to avoid for a project like this. Still, the architecture is a Class-based concept I've been perfecting for my last few projects and this is probably my favorite implementation so far.
+[The second version](http://nominalaeon.github.io/nasa-gsfc-ng/) is built with Angular 1.5. The app winds up in pretty deep DOM-manipulation waters when it has to pull in fresh image assets from the API. Angular just makes too much sense to avoid for a project like this. Still, the architecture is a Class-based concept I've been perfecting for my last few projects and this is probably my favorite implementation so far.
 
 
