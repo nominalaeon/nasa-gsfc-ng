@@ -47,10 +47,13 @@ Creating JavaScript Classes and independent Components comes with more up-front 
 
 ### vanilla JavaScript
 
-[The first version](http://nominalaeon.github.io/nasa-gsfc-js/) of the app is straight-up JavaScript using a couple of open-source tools I developed beforehand, including [FrenchDipJS](http://nominalaeon.github.io/french-dip/).
+[The first version](http://rodenbeek.com/nasa-gsfc-js/) of the app is straight-up JavaScript using a couple of open-source tools I developed beforehand, including [FrenchDipJS](http://nominalaeon.github.io/french-dip/).
 
 ### AngularJS
 
-[The second version](http://nominalaeon.github.io/nasa-gsfc-ng/) is built with Angular 1.5. The app winds up in pretty deep DOM-manipulation waters when it has to pull in fresh image assets from the API. Angular just makes too much sense to avoid for a project like this. Still, the architecture is a Class-based concept I've been perfecting for my last few projects and this is probably my favorite implementation so far.
+[The second version](http://rodenbeek.com/nasa-gsfc-ng/) is built with Angular 1.5. The app winds up in pretty deep DOM-manipulation waters when it has to pull in fresh image assets from the API. Angular just makes too much sense to avoid for a project like this. Still, the architecture is a Class-based concept I've been perfecting for my last few projects and this is probably my favorite implementation so far.
+
+
+
 
 
