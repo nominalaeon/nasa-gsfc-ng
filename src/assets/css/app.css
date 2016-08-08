@@ -1,0 +1,322 @@
+/*============================================================
+=            Sizes calculated from base variables            =
+============================================================*/
+/* line 2, ../../scss/_general.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 7, ../../scss/_general.scss */
+body {
+  color: #4d4d5e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+/* line 15, ../../scss/_general.scss */
+body * {
+  box-sizing: border-box;
+  letter-spacing: 0.0625em;
+}
+
+/* line 21, ../../scss/_general.scss */
+a {
+  color: #1a9cff;
+}
+/* line 23, ../../scss/_general.scss */
+a:hover {
+  color: #76c4ff;
+  transition: .2s ease-in-out background-color;
+}
+
+/* line 29, ../../scss/_general.scss */
+h1, h2, h3, h4, p {
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+/* line 35, ../../scss/_general.scss */
+h1 {
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+/* line 39, ../../scss/_general.scss */
+h2, .h2 {
+  font-size: 33px;
+}
+
+/* line 42, ../../scss/_general.scss */
+h3, .h3 {
+  font-size: 25px;
+}
+
+/* line 45, ../../scss/_general.scss */
+h4, .h4 {
+  font-size: 19px;
+}
+
+/* line 49, ../../scss/_general.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 53, ../../scss/_general.scss */
+p {
+  margin-bottom: 15px;
+}
+
+/*===============================
+=            Classes            =
+===============================*/
+/* line 61, ../../scss/_general.scss */
+.nasa-branding {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 66, ../../scss/_general.scss */
+.nasa-branding > div {
+  align-items: center;
+  display: flex;
+  height: 82px;
+  justify-content: flex-end;
+}
+/* line 72, ../../scss/_general.scss */
+.nasa-branding > div:first-child {
+  border-right: 1px solid #c2c2c8;
+  margin-right: -12.5px;
+  padding-right: 15px;
+}
+/* line 77, ../../scss/_general.scss */
+.nasa-branding > div:last-child {
+  padding-left: 30px;
+}
+/* line 81, ../../scss/_general.scss */
+.nasa-branding img {
+  width: 107px;
+  height: 107px;
+  margin-right: -12.5px;
+}
+/* line 85, ../../scss/_general.scss */
+.nasa-branding p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/* line 2, ../../scss/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 6, ../../scss/_helpers.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 9, ../../scss/_helpers.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 13, ../../scss/_helpers.scss */
+.transition-disabler * {
+  transition: none !important;
+}
+
+/* line 2, ../../scss/_layout.scss */
+.content-wrapper {
+  margin: 0 30px;
+}
+
+/* line 6, ../../scss/_layout.scss */
+.content {
+  border-top: 1px solid #c2c2c8;
+  margin-top: 15px;
+  padding: 30px;
+  padding-top: 15px;
+  position: relative;
+}
+/* line 13, ../../scss/_layout.scss */
+.content::before, .content::after {
+  border-left: 1px solid #c2c2c8;
+  content: '';
+  display: block;
+  height: 82px;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  bottom: -15px;
+}
+/* line 22, ../../scss/_layout.scss */
+.content::before {
+  height: 164px;
+  right: auto;
+  left: 15px;
+}
+
+/* line 2, ../../scss/_header.scss */
+.header-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-bottom: 60px;
+  max-width: 1200px;
+}
+
+/* line 2, ../../scss/_search.scss */
+.search {
+  -moz-transition: ease-in-out 0.6s background-color;
+  -o-transition: ease-in-out 0.6s background-color;
+  -webkit-transition: ease-in-out 0.6s background-color;
+  transition: ease-in-out 0.6s background-color;
+  background-color: #9999a3;
+  color: #fff;
+  display: flex;
+  max-height: 100vh;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* line 13, ../../scss/_search.scss */
+.search::after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkNGQ1ZSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZDRkNWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(77, 77, 94, 0)), color-stop(100%, #4d4d5e));
+  background-image: -moz-linear-gradient(bottom, rgba(77, 77, 94, 0), #4d4d5e);
+  background-image: -webkit-linear-gradient(bottom, rgba(77, 77, 94, 0), #4d4d5e);
+  background-image: linear-gradient(to top, rgba(77, 77, 94, 0), #4d4d5e);
+  content: '';
+  display: block;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 23, ../../scss/_search.scss */
+.search input {
+  color: #4d4d5e;
+}
+/* line 26, ../../scss/_search.scss */
+.search select, .search textarea {
+  color: #9999a3;
+}
+
+/* line 31, ../../scss/_search.scss */
+.search--collapsed {
+  height: auto !important;
+}
+/* line 33, ../../scss/_search.scss */
+.search--collapsed .search-wrapper {
+  padding-bottom: 0;
+}
+/* line 36, ../../scss/_search.scss */
+.search--collapsed .search__toggle {
+  top: 15px;
+}
+/* line 39, ../../scss/_search.scss */
+.search--collapsed .search__form {
+  overflow: hidden;
+}
+/* line 41, ../../scss/_search.scss */
+.search--collapsed .search__form fieldset {
+  border: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 48, ../../scss/_search.scss */
+.search--collapsed .search__field {
+  display: none;
+}
+/* line 51, ../../scss/_search.scss */
+.search--collapsed .search__text {
+  display: block;
+  padding: 15px 0 !important;
+}
+
+/* line 57, ../../scss/_search.scss */
+.search-wrapper {
+  padding: 0 30px;
+  position: relative;
+}
+
+/* line 62, ../../scss/_search.scss */
+.search__toggle {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #9999a3 !important;
+  border-radius: 3px;
+  color: #9999a3;
+  font-size: 1.4em;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+/* line 72, ../../scss/_search.scss */
+.search__toggle:focus {
+  outline: 0;
+}
+/* line 75, ../../scss/_search.scss */
+.search__toggle:active, .search__toggle:hover {
+  background-color: #e5e5e7;
+  color: #4d4d5e;
+}
+
+/* line 82, ../../scss/_search.scss */
+.search__form {
+  height: 100%;
+  overflow: auto;
+  padding: 0 30px;
+}
+/* line 87, ../../scss/_search.scss */
+.search__form fieldset {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 30px;
+}
+/* line 93, ../../scss/_search.scss */
+.search__form .search__field {
+  margin-bottom: 15px;
+  width: 100%;
+}
+/* line 97, ../../scss/_search.scss */
+.search__form .search__text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 30px 0;
+}
+/* line 103, ../../scss/_search.scss */
+.search__form .search__text button {
+  border: 1px solid #0aa32d;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+/* line 110, ../../scss/_search.scss */
+.search__form .search__text input {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: inline-block;
+  margin: 0;
+}
+/* line 118, ../../scss/_search.scss */
+.search__form .search__submit {
+  background-color: #0aa32d;
+  color: #fff;
+}
+/* line 121, ../../scss/_search.scss */
+.search__form .search__submit:hover {
+  background-color: #44bc46;
+}

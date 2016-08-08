@@ -1,0 +1,30 @@
+
+.content-wrapper {
+    margin: 0 $margin;
+}
+
+.content {
+    border-top: 1px solid $grey--lighter;
+    margin-top: $N;
+    padding: $margin;
+    padding-top: $N;
+    position: relative;
+
+    &::before,
+    &::after {
+        border-left: 1px solid $grey--lighter;
+        content: '';
+        display: block;
+        height: $S;
+        position: absolute;
+        top: -$N; right: $N; bottom: -$N;
+    }
+    &::before {
+        height: $S * 2;
+        right: auto; left: $N;
+    }
+}
+
+.content__panel {
+    
+}

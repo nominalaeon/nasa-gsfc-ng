@@ -1,0 +1,80 @@
+
+<div class="search" ng-class="{ 'search--collapsed': !search.sf.isAdvanced }">
+
+    <div class="search-wrapper pure-u-3-5">
+
+        <button class="search__toggle"
+            title="Toggle advanced search"
+            ng-click="search.onClickToggle()">
+            <i class="fa" ng-class="{
+                'fa-expand': !search.sf.isAdvanced,
+                'fa-compress': search.sf.isAdvanced
+            }"></i>
+        </button>
+
+        <form class="search__form pure-form pure-form-stacked"
+            name="search.form"
+            novalidate>
+
+            <div class="search__field search__text pure-control-group">
+                <input class="pure-u-3-5"
+                    type="text"
+                    ng-model="search.sf.text">
+                <button class="search__submit pure-button"
+                    type="submit"
+                    ng-click="search.onSubmit()">
+                    Search
+                </button>
+            </div>
+
+            <fieldset>
+
+                <!--==========================
+                =            Tags            =
+                ===========================-->
+
+                <div class="pure-u-5-12">
+
+                    <div class="search__field"
+                        ng-repeat="tag in search.tf.tags">
+                        <label for="tag--{{tag._content}}" class="pure-checkbox">
+                            <input id="tag--{{tag._content}}"
+                                name="tag--{{tag._content}}"
+                                type="checkbox"
+                                ng-value="true"
+                                ng-model="tag.isActive">
+                            {{tag._content}}
+                        </label>
+
+                    </div>
+                </div>
+
+                <!--==================================
+                =            Other params            =
+                ===================================-->
+                
+                <div class="pure-u-1-2">
+
+                    <div class="search__field pure-control-group">
+                        <label for="sortBy">Sort by</label>
+                        <select name="sortBy"
+                            ng-options="val as key for (key, val) in search.sf.sortOptions"
+                            ng-model="search.sf.sort">
+                            <option value="" disabled>-Select a sort method-</option>
+                        </select>
+                    </div>
+
+                    <div class="search__field pure-control-group">
+                        <label for="displayCount">Images to show</label>
+                        <select name="displayCount"
+                            ng-options="perPage for perPage in search.sf.perPageOptions"
+                            ng-model="search.sf.per_page">
+                            <option value="" disabled>-Select an amount-</option>
+                        </select>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>

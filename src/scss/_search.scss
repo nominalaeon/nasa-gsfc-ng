@@ -1,0 +1,125 @@
+
+.search {
+    @include transition(.6s ease-in-out background-color);
+    background-color: $grey--light;
+    color: $white;
+    display: flex;
+    max-height: 100vh;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    &::after {
+        @include background-image(linear-gradient(to top, rgba($grey, 0), $grey));
+        content: '';
+        display: block;
+        height: 4px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    input {
+        color: $grey;
+    }
+    select, textarea {
+        color: $grey--light;
+    }
+}
+
+.search--collapsed {
+    height: auto !important;
+    .search-wrapper {
+        padding-bottom: 0;
+    }
+    .search__toggle {
+        top: $N;
+    }
+    .search__form {
+        overflow: hidden;
+        fieldset {
+            border: 0;
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+    }
+    .search__field {
+        display: none;
+    }
+    .search__text {
+        display: block;
+        padding: $N 0 !important;
+    }
+}
+
+.search-wrapper {
+    padding: 0 $margin;
+    position: relative;
+}
+
+.search__toggle {
+    @include square($margin);
+    background-color: $white;
+    border: 1px solid $grey--light !important;
+    border-radius: 3px;
+    color: $grey--light;
+    font-size: 1.4em;
+    position: absolute;
+    top: $margin; left: 0;
+    
+    &:focus {
+        outline: 0;
+    }
+    &:active,
+    &:hover {
+        background-color: $grey--lightest;
+        color: $grey;
+    }
+}
+
+.search__form {
+    height: 100%;
+    overflow: auto;
+    padding: 0 $margin;
+    
+    fieldset {
+        border-top: 1px solid $white--transparent;
+        border-bottom: 1px solid $white--transparent;
+        padding: $margin;
+    }
+
+    .search__field {
+        margin-bottom: $N;
+        width: 100%;
+    }
+    .search__text {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        padding: $margin 0;
+        button {
+            border: 1px solid $green;
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin: 0;
+        }
+        input {
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    .search__submit {
+        background-color: $green;
+        color: $white;
+        &:hover {
+            background-color: $green--light;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $margin;
+    padding-bottom: $margin * 2;
+    max-width: 1200px;
+}

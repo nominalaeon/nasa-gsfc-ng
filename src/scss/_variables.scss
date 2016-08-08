@@ -1,0 +1,16 @@
+
+$nasa-logo-size: 107px;
+
+$S: 82px; // Sphere diameter
+$N: 15px; // Type height of acronym
+$T: 10px; // Type height of agency name
+
+$font-size: $T * 1.4;
+$nav-icon-size: $T * 5.4;
+$margin: $N * 2; // 2N is a common margin width used in NASA's style guide
+
+/*============================================================
+=            Sizes calculated from base variables            =
+============================================================*/
+
+$header-height: $S + $margin + ($margin * 2); // logo height, top margin, bottom margin

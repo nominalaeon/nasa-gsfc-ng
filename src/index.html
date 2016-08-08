@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US" ng-app="nasaApp" ng-controller="NasaAppController as nasa">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title ng-bind="nasa.$state.current.title"></title>
+
+    <link rel='stylesheet' href='vendor/normalize-css/normalize.css' />
+    <link rel='stylesheet' href='vendor/pure/pure.css' />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+    <link href='assets/css/app.css' rel='stylesheet' type='text/css' >
+
+    <base href="/">
+
+</head>
+
+<body class="transition-disabler">
+
+    <div class="content-wrapper pure-g">
+
+        <div header></div>
+
+        <div class="content pure-u-1" ui-view></div>
+
+    </div>
+
+    <div search></div>
+
+    <script src="vendor/ev-emitter/ev-emitter.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="vendor/lodash/lodash.js"></script>
+    <script src="assets/vendor/modernizr.custom.js"></script>
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
